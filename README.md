@@ -83,7 +83,7 @@ Book-Store-Management-System/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/book-store-management-system.git
+https://github.com/MIbraheemDaudpoto/Book-store-Management-System.git
 ```
 
 ## 2️⃣ Move into the Project Folder
