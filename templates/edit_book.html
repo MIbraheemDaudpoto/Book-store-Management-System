@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <h2>Edit Book</h2>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="title"
+            class="form-control mb-3"
+            value="{{ book.title }}"
+            required
+        >
+
+        <input
+            type="text"
+            name="author"
+            class="form-control mb-3"
+            value="{{ book.author }}"
+            required
+        >
+
+        <input
+            type="text"
+            name="category"
+            class="form-control mb-3"
+            value="{{ book.category }}"
+            required
+        >
+
+        <input
+            type="number"
+            name="price"
+            class="form-control mb-3"
+            value="{{ book.price }}"
+            required
+        >
+
+        <input
+            type="number"
+            name="quantity"
+            class="form-control mb-3"
+            value="{{ book.quantity }}"
+            required
+        >
+
+        <button class="btn btn-success">
+            Update Book
+        </button>
+
+        <a href="/" class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>
+
+{% endblock %}

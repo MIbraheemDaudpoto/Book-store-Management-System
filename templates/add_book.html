@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <h2>Add New Book</h2>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="title"
+            class="form-control mb-3"
+            placeholder="Book Title"
+            required
+        >
+
+        <input
+            type="text"
+            name="author"
+            class="form-control mb-3"
+            placeholder="Author"
+            required
+        >
+
+        <input
+            type="text"
+            name="category"
+            class="form-control mb-3"
+            placeholder="Category"
+            required
+        >
+
+        <input
+            type="number"
+            name="price"
+            class="form-control mb-3"
+            placeholder="Price"
+            required
+        >
+
+        <input
+            type="number"
+            name="quantity"
+            class="form-control mb-3"
+            placeholder="Quantity"
+            required
+        >
+
+        <button class="btn btn-success">
+            Save Book
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}
