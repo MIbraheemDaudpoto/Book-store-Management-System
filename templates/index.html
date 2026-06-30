@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-    <h1>Welcome to Book Store  Management system</h1>
-    
-</body>
-</html>
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<div class="text-center">
+
+    <h1 class="display-4 mb-3">
+        📚 Book Store Management System
+    </h1>
+
+    <p class="lead">
+        Welcome to the Book Management System built with Flask.
+        Here you can manage your collection of books efficiently.
+    </p>
+
+    <a href="#" class="btn btn-primary btn-lg mt-3">
+        Add Book
+    </a>
+
+</div>
+
+{% endblock %}
